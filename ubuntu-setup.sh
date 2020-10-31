@@ -108,32 +108,40 @@ dconf write /org/gnome/shell/favorite-apps "['code.desktop', 'gitkraken.desktop'
 
 # 5.2. VS Code exstensions
 # a) C#
-code --install-extension ms-dotnettools.csharp
-code --install-extension Leopotam.csharpfixformat
+code --install-extension adrianwilczynski.csharp-to-typescript
+code --install-extension adrianwilczynski.namespace
 code --install-extension jchannon.csharpextensions
-code --install-extension VisualStudioExptTeam.vscodeintellicode
 code --install-extension jorgeserrano.vscode-csharp-snippets
+code --install-extension Leopotam.csharpfixformat
+code --install-extension ms-dotnettools.csharp
+code --install-extension VisualStudioExptTeam.vscodeintellicode
 
 # b) JS
-code --install-extension dsznajder.es7-react-js-snippets
-code --install-extension octref.vetur
+code --install-extension angryobject.react-pure-to-class-vscode
 code --install-extension dbaeumer.vscode-eslint
+code --install-extension dsznajder.es7-react-js-snippets
+code --install-extension kisstkondoros.typelens
+code --install-extension octref.vetur
 
 # c) Git
-code --install-extension waderyan.gitblame
-code --install-extension eamodio.gitlens
 code --install-extension donjayamanne.githistory
+code --install-extension eamodio.gitlens
+code --install-extension mhutchie.git-graph
+code --install-extension waderyan.gitblame
 
 # d) Others
 code --install-extension alefragnani.Bookmarks
-code --install-extension CoenraadS.bracket-pair-colorizer-2
-code --install-extension naumovs.color-highlight
-code --install-extension wayou.vscode-todo-highlight
-code --install-extension formulahendry.auto-rename-tag
-code --install-extension formulahendry.auto-close-tag
 code --install-extension christian-kohler.path-intellisense
-code --install-extension ms-azuretools.vscode-docker
+code --install-extension CoenraadS.bracket-pair-colorizer-2
+code --install-extension formulahendry.auto-close-tag
+code --install-extension formulahendry.auto-rename-tag
 code --install-extension HookyQR.beautify
+code --install-extension ionutvmi.path-autocomplete
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension naumovs.color-highlight
+code --install-extension shardulm94.trailing-spaces
+code --install-extension smukkekim.theme-setimonokai
+code --install-extension wayou.vscode-todo-highlight
 
 # 5.3. Aliases
 alias open="xdg-open"
