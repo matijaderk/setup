@@ -113,16 +113,21 @@ code --install-extension Leopotam.csharpfixformat
 code --install-extension jchannon.csharpextensions
 code --install-extension VisualStudioExptTeam.vscodeintellicode
 code --install-extension jorgeserrano.vscode-csharp-snippets
+code --install-extension adrianwilczynski.namespace
+code --install-extension adrianwilczynski.csharp-to-typescript
 
 # b) JS
 code --install-extension dsznajder.es7-react-js-snippets
 code --install-extension octref.vetur
 code --install-extension dbaeumer.vscode-eslint
+code --install-extension kisstkondoros.typelens
+code --install-extension angryobject.react-pure-to-class-vscode
 
 # c) Git
 code --install-extension waderyan.gitblame
 code --install-extension eamodio.gitlens
 code --install-extension donjayamanne.githistory
+code --install-extension mhutchie.git-graph
 
 # d) Others
 code --install-extension alefragnani.Bookmarks
@@ -134,6 +139,9 @@ code --install-extension formulahendry.auto-close-tag
 code --install-extension christian-kohler.path-intellisense
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension HookyQR.beautify
+code --install-extension shardulm94.trailing-spaces
+code --install-extension smukkekim.theme-setimonokai
+code --install-extension ionutvmi.path-autocomplete
 
 # 5.3. Aliases
 alias open="xdg-open"
