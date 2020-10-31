@@ -13,7 +13,7 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "svipas.prettier-plus"
   },
-  "debug.console.fontSize": 12,
+  "debug.console.fontSize": 14,
   "diffEditor.renderSideBySide": true,
   "editor.detectIndentation": false,
   "editor.fontSize": 14,
@@ -49,4 +49,9 @@
   "workbench.editor.tabSizing": "shrink",
   "workbench.settings.editor": "json",
   "workbench.sideBar.location": "right",
+  "[json]": {
+    "editor.defaultFormatter": "svipas.prettier-plus"
+  },
+  "editor.minimap.enabled": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
 }
