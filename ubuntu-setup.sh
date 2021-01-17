@@ -145,8 +145,6 @@ code --install-extension wayou.vscode-todo-highlight
 
 # 5.3. Aliases
 alias open="xdg-open"
-alias gad="git add"
-alias gcm="git commit"
 
 # 5.4 Clean up files
 rm *.deb
