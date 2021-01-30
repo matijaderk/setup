@@ -74,8 +74,8 @@ chapterEcho '3. APT PACKAGES starting...'
 # 3.1. Node
 sudo apt-get install nodejs -y
 
-# 3.2. npm
-sudo apt-get install npm -y
+# 3.2. wget
+sudo apt-get install wget -y
 
 # 3.3. git
 sudo apt-get install git -y
@@ -88,25 +88,15 @@ sudo apt-get install postgresql-12 pgadmin4 -y
 
 chapterEcho '3. APT PACKAGES complete...'
 
-####################
-### NPM PACKAGES ###
-####################
-chapterEcho '4. NPM PACKAGES starting...'
-
-# 4.1. Vue
-sudo npm install -g @vue/cli
-
-chapterEcho '4. NPM PACKAGES complete...'
-
 ##################
 ### POST-SETUP ###
 ##################
-chapterEcho '5. POST-SETUP starting...'
+chapterEcho '4. POST-SETUP starting...'
 
-# 5.1. Favorite sidebar apps
+# 4.1. Favorite sidebar apps
 dconf write /org/gnome/shell/favorite-apps "['code.desktop', 'gitkraken.desktop', 'terminal.desktop', 'gnome-system-monitor.desktop', 'firefox.desktop', 'thunderbird.desktop', 'org.gnome.Nautilus.desktop']"
 
-# 5.2. VS Code exstensions
+# 4.2. VS Code exstensions
 # a) C#
 code --install-extension adrianwilczynski.csharp-to-typescript
 code --install-extension adrianwilczynski.namespace
@@ -122,6 +112,7 @@ code --install-extension dbaeumer.vscode-eslint
 code --install-extension dsznajder.es7-react-js-snippets
 code --install-extension kisstkondoros.typelens
 code --install-extension octref.vetur
+code --install-extension ms-vscode.vscode-typescript-tslint-plugin
 
 # c) Git
 code --install-extension donjayamanne.githistory
@@ -143,11 +134,14 @@ code --install-extension shardulm94.trailing-spaces
 code --install-extension smukkekim.theme-setimonokai
 code --install-extension wayou.vscode-todo-highlight
 
-# 5.3. Aliases
+# 4.3 Download VS Code settings file
+wget -O "$HOME/.config/Code/User/settings.json" https://raw.githubusercontent.com/matijaderk/setup/master/vscode-settings
+
+# 4.4. Aliases
 alias open="xdg-open"
 
-# 5.4 Clean up files
+# 4.5 Clean up files
 rm *.deb
 rm *.gpg
 
-chapterEcho '5. POST-SETUP complete...'
+chapterEcho '4. POST-SETUP complete...'
