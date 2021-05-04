@@ -132,6 +132,7 @@ code --install-extension ms-azuretools.vscode-docker
 code --install-extension naumovs.color-highlight
 code --install-extension shardulm94.trailing-spaces
 code --install-extension smukkekim.theme-setimonokai
+code --install-extension alekangelov.alek-kai-theme
 code --install-extension wayou.vscode-todo-highlight
 
 # 4.3 Download VS Code settings file
