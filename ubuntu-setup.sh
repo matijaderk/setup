@@ -44,7 +44,7 @@ wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.
 sudo dpkg -i packages-microsoft-prod.deb
 
 sudo apt-get update
-sudo apt-get install dotnet-sdk-3.1 -y
+sudo apt-get install ddotnet-sdk-5.0 -y
 
 # 2.4. Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -57,7 +57,7 @@ sudo apt-get update
 sudo apt-get install yarn -y
 
 # 2.7 Slack
-wget https://downloads.slack-edge.com/linux_releases/slack-desktop-4.4.3-amd64.deb
+wget https://downloads.slack-edge.com/linux_releases/slack-desktop-4.16.0-amd64.deb
 sudo apt-get install ./slack-desktop-*.deb
 
 # 2.8 Dropbox
@@ -142,9 +142,7 @@ wget -O "$HOME/.config/Code/User/settings.json" https://raw.githubusercontent.co
 alias open="xdg-open"
 
 # 4.5. Customize Ubuntu settings
-gsettings set org.gnome.gnome-system-monitor cpu-colors [(uint32 0, 'rgb(114,159,207)'), (1, 'rgb(114,159,207)'), (2, 'rgb(114,159,207)'), (3, 'rgb(114,159,207)'), (4, 'rgb(114,159,207)'), (5, 'rgb(114,159,207)'), (6, 'rgb(114,159,207)'), (7, 'rgb(114,159,207)'), (8, 'rgb(114,159,207)'), (9, 'rgb(114,159,207)'), (10, 'rgb(114,159,207)'), (11, 'rgb(114,159,207)'), (12, 'rgb(114,159,207)'), (13, 'rgb(114,159,207)'), (14, 'rgb(114,159,207)'), (15, 'rgb(114,159,207)')]
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 32
-
 
 # 4.6 Clean up files
 rm *.deb
