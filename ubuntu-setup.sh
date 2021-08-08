@@ -149,7 +149,10 @@ gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 32
 wget -O /tmp/wallpaper.jpg "https://raw.githubusercontent.com/matijaderk/setup/master/Wallpaper.jpg"
 gsettings set org.gnome.desktop.background picture-uri file:////tmp/wallpaper.jpg
 
-# 4.6 Clean up files
+# 4.7 Set timezone
+sudo timedatectl set-timezone Europe/Zagreb
+
+# 4.8 Clean up files
 rm *.deb
 rm *.gpg
 
