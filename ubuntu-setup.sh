@@ -145,6 +145,10 @@ alias open="xdg-open"
 # 4.5. Customize Ubuntu settings
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 32
 
+# 4.6 Set default wallpaper
+wget -O /tmp/wallpaper.jpg "https://raw.githubusercontent.com/matijaderk/setup/master/Wallpaper.jpg"
+gsettings set org.gnome.desktop.background picture-uri file:////tmp/wallpaper.jpg
+
 # 4.6 Clean up files
 rm *.deb
 rm *.gpg
