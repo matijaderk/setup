@@ -41,11 +41,11 @@ sudo apt-get update
 sudo apt-get install code -y
 
 # 2.3. Dotnet Core
-wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
+# wget https://packages.microsoft.com/config/ubuntu/21.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+# sudo dpkg -i packages-microsoft-prod.deb
 
-sudo apt-get update
-sudo apt-get install dotnet-sdk-5.0 -y
+# sudo apt-get update
+# sudo apt-get install dotnet-sdk-5.0 -y
 
 # 2.4. Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -82,10 +82,10 @@ sudo apt-get install wget -y
 sudo apt-get install git -y
 
 # 3.4. PostgreSQL
-sudo apt install postgresql-common -y
-sudo sh /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
-sudo apt-get update
-sudo apt-get install postgresql-12 pgadmin4 -y
+# sudo apt install postgresql-common -y
+# sudo sh /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
+# sudo apt-get update
+# sudo apt-get install postgresql-12 pgadmin4 -y
 
 chapterEcho '3. APT PACKAGES complete...'
 
@@ -140,14 +140,14 @@ code --install-extension wayou.vscode-todo-highlight
 wget -O "$HOME/.config/Code/User/settings.json" https://raw.githubusercontent.com/matijaderk/setup/master/vscode-settings
 
 # 4.4. Aliases
-alias open="xdg-open"
+# alias open="xdg-open"
 
 # 4.5. Customize Ubuntu settings
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 32
 
 # 4.6 Set default wallpaper
-wget -O /tmp/wallpaper.jpg "https://raw.githubusercontent.com/matijaderk/setup/master/Wallpaper.jpg"
-gsettings set org.gnome.desktop.background picture-uri file:////tmp/wallpaper.jpg
+wget -O /home/mat/Pictures/Wallpapers/wallpaper.jpg "https://raw.githubusercontent.com/matijaderk/setup/master/Wallpaper.jpg"
+gsettings set org.gnome.desktop.background picture-uri file:////home/mat/Pictures/Wallpapers//wallpaper.jpg
 
 # 4.7 Set timezone
 sudo timedatectl set-timezone Europe/Zagreb
