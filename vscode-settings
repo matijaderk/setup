@@ -1,57 +1,53 @@
 {
-  "[html]": {
-    "editor.defaultFormatter": "HookyQR.beautify"
-  },
-  "[javascript]": {
+    "[html]": {
+      "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[javascript]": {
+      "editor.tabSize": 2,
+      "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[typescript]": {
+      "editor.tabSize": 2,
+      "editor.defaultFormatter": "svipas.prettier-plus"
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "svipas.prettier-plus"
+    },
+    "debug.console.fontSize": 14,
+    "diffEditor.renderSideBySide": true,
+    "editor.detectIndentation": false,
+    "editor.fontSize": 14,
+    "editor.fontWeight": "500",
+    "editor.formatOnSave": false,
+    "editor.insertSpaces": true,
+    "editor.stablePeek": true,
+    "editor.suggestSelection": "first",
     "editor.tabSize": 2,
-    "editor.defaultFormatter": "HookyQR.beautify"
-  },
-  "[typescript]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "svipas.prettier-plus"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "svipas.prettier-plus"
-  },
-  "debug.console.fontSize": 14,
-  "diffEditor.renderSideBySide": true,
-  "editor.detectIndentation": false,
-  "editor.fontSize": 14,
-  "editor.fontWeight": "500",
-  "editor.formatOnSave": false,
-  "editor.insertSpaces": true,
-  "editor.stablePeek": true,
-  "editor.suggestSelection": "first",
-  "editor.tabSize": 2,
-  "editor.wrappingIndent": "none",
-  "explorer.confirmDragAndDrop": false,
-  "files.insertFinalNewline": true,
-  "git.enableSmartCommit": true,
-  "gitlens.advanced.messages": {
-    "suppressShowKeyBindingsNotice": true
-  },
-  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
-  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
-  "javascript.implicitProjectConfig.experimentalDecorators": true,
-  "prettier.arrowParens": "always",
-  "prettier.singleQuote": true,
-  "prettier.trailingComma": "all",
-  "terminal.integrated.fontSize": 12,
-  "terminal.integrated.rendererType": "dom",
-  "typescript.format.insertSpaceAfterSemicolonInForStatements": false,
-  "typescript.preferences.importModuleSpecifier": "relative",
-  "typescript.preferences.quoteStyle": "single",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "window.zoomLevel": 0,
-  "workbench.colorTheme": "Seti Monokai",
-  "workbench.editor.showTabs": true,
-  "workbench.editor.tabSizing": "shrink",
-  "workbench.settings.editor": "json",
-  "workbench.sideBar.location": "right",
-  "[json]": {
-    "editor.defaultFormatter": "svipas.prettier-plus"
-  },
-  "editor.minimap.enabled": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-}
+    "editor.wrappingIndent": "none",
+    "explorer.confirmDragAndDrop": false,
+    "files.insertFinalNewline": true,
+    "git.enableSmartCommit": true,
+    "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+    "prettier.arrowParens": "always",
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "all",
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.rendererType": "dom",
+    "typescript.format.insertSpaceAfterSemicolonInForStatements": false,
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "typescript.preferences.quoteStyle": "single",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Seti Monokai",
+    "workbench.editor.showTabs": true,
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.settings.editor": "json",
+    "workbench.sideBar.location": "right",
+    "[json]": {
+      "editor.defaultFormatter": "svipas.prettier-plus"
+    },
+    "editor.minimap.enabled": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+  }
