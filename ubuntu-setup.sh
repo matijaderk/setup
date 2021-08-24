@@ -100,6 +100,9 @@ sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_
 # Install pgAdmin
 sudo apt install pgadmin4
 
+# 3.6 psensor
+sudo apt install psensor
+
 chapterEcho '3. APT PACKAGES complete...'
 
 ##################
@@ -108,7 +111,7 @@ chapterEcho '3. APT PACKAGES complete...'
 chapterEcho '4. POST-SETUP starting...'
 
 # 4.1. Favorite sidebar apps
-dconf write /org/gnome/shell/favorite-apps "['code.desktop', 'gitkraken.desktop', 'terminal.desktop', 'gnome-system-monitor.desktop', 'firefox.desktop', 'thunderbird.desktop', 'org.gnome.Nautilus.desktop']"
+dconf write /org/gnome/shell/favorite-apps "['google-chrome.desktop', 'code.desktop', 'gitkraken.desktop', 'org.gnome.Terminal.desktop', 'gnome-system-monitor.desktop', 'psensor.desktop', 'org.gnome.Nautilus.desktop']"
 
 # 4.2. VS Code exstensions
 # a) C#
