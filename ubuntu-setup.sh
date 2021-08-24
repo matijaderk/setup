@@ -41,11 +41,11 @@ sudo apt-get update
 sudo apt-get install code -y
 
 # 2.3. Dotnet Core
-# wget https://packages.microsoft.com/config/ubuntu/21.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-# sudo dpkg -i packages-microsoft-prod.deb
+wget https://packages.microsoft.com/config/ubuntu/21.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
 
-# sudo apt-get update
-# sudo apt-get install dotnet-sdk-5.0 -y
+sudo apt-get update
+sudo apt-get install dotnet-sdk-5.0 -y
 
 # 2.4. Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -82,10 +82,23 @@ sudo apt-get install wget -y
 sudo apt-get install git -y
 
 # 3.4. PostgreSQL
-# sudo apt install postgresql-common -y
-# sudo sh /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
-# sudo apt-get update
-# sudo apt-get install postgresql-12 pgadmin4 -y
+# Create the file repository configuration:
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+# Import the repository signing key:
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+# Update the package lists:
+sudo apt-get update
+# Install the latest version of PostgreSQL.
+# If you want a specific version, use 'postgresql-12' or similar instead of 'postgresql':
+sudo apt-get -y install postgresql
+
+# 3.5 pgAdmin4
+# Install the public key for the repository (if not done previously):
+sudo curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
+# Create the repository configuration file:
+sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
+# Install pgAdmin
+sudo apt install pgadmin4
 
 chapterEcho '3. APT PACKAGES complete...'
 
@@ -139,20 +152,17 @@ code --install-extension wayou.vscode-todo-highlight
 # 4.3 Download VS Code settings file
 wget -O "$HOME/.config/Code/User/settings.json" https://raw.githubusercontent.com/matijaderk/setup/master/vscode-settings
 
-# 4.4. Aliases
-# alias open="xdg-open"
-
-# 4.5. Customize Ubuntu settings
+# 4.4. Customize Ubuntu settings
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 32
 
-# 4.6 Set default wallpaper
+# 4.5 Set default wallpaper
 wget -O /home/mat/Pictures/Wallpapers/wallpaper.jpg "https://raw.githubusercontent.com/matijaderk/setup/master/Wallpaper.jpg"
 gsettings set org.gnome.desktop.background picture-uri file:////home/mat/Pictures/Wallpapers//wallpaper.jpg
 
-# 4.7 Set timezone
+# 4.6 Set timezone
 sudo timedatectl set-timezone Europe/Zagreb
 
-# 4.8 Clean up files
+# 4.7 Clean up files
 rm *.deb
 rm *.gpg
 
