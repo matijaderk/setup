@@ -65,6 +65,10 @@ sudo apt-get install ./slack-desktop-*.deb
 wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2020.03.04_amd64.deb
 sudo dpkg -i *dropbox_*.deb
 
+# 2.9. Insomnia
+wget https://updates.insomnia.rest/downloads/ubuntu/latest
+sudo dpkg -i Insomnia.Core-*.deb
+
 chapterEcho '2. DEB FILES complete...'
 
 ####################
@@ -111,7 +115,7 @@ chapterEcho '3. APT PACKAGES complete...'
 chapterEcho '4. POST-SETUP starting...'
 
 # 4.1. Favorite sidebar apps
-dconf write /org/gnome/shell/favorite-apps "['google-chrome.desktop', 'code.desktop', 'gitkraken.desktop', 'org.gnome.Terminal.desktop', 'gnome-system-monitor.desktop', 'psensor.desktop', 'org.gnome.Nautilus.desktop']"
+dconf write /org/gnome/shell/favorite-apps "['google-chrome.desktop', 'code.desktop', 'gitkraken.desktop', 'insomnia.desktop', 'pgadmin4.desktop', 'org.gnome.Terminal.desktop', 'gnome-system-monitor.desktop', 'psensor.desktop', 'org.gnome.Nautilus.desktop']"
 
 # 4.2. VS Code exstensions
 # a) C#
