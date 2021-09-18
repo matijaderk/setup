@@ -158,17 +158,11 @@ code --install-extension wayou.vscode-todo-highlight
 # 4.3 Download VS Code settings file
 wget -O "$HOME/.config/Code/User/settings.json" https://raw.githubusercontent.com/matijaderk/setup/master/vscode-settings
 
-# 4.4. Customize Ubuntu settings
-gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 32
-
-# 4.5 Set default wallpaper
+# 4.4 Set default wallpaper
 wget -O /home/mat/Pictures/Wallpapers/wallpaper.jpg "https://raw.githubusercontent.com/matijaderk/setup/master/Wallpaper.jpg"
 gsettings set org.gnome.desktop.background picture-uri file:////home/mat/Pictures/Wallpapers//wallpaper.jpg
 
-# 4.6 Set timezone
-sudo timedatectl set-timezone Europe/Zagreb
-
-# 4.7 Clean up files
+# 4.5 Clean up files
 rm *.deb
 rm *.gpg
 
