@@ -21,7 +21,7 @@ sudo apt-get install gconf-service gconf-service-backend gconf2 gconf2-common li
 chapterEcho '1. PRE SETUP complete...'
 
 #################
-### DEB FILES ###
+### DEB/SNAP FILES ###
 #################
 chapterEcho '2. DEB FILES starting...'
 
@@ -68,6 +68,9 @@ sudo dpkg -i *dropbox_*.deb
 # 2.9. Insomnia
 wget https://updates.insomnia.rest/downloads/ubuntu/latest
 sudo dpkg -i Insomnia.Core-*.deb
+
+# 2.10. Postman
+sudo snap install postman
 
 chapterEcho '2. DEB FILES complete...'
 
