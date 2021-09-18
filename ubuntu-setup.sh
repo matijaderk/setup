@@ -118,7 +118,7 @@ chapterEcho '3. APT PACKAGES complete...'
 chapterEcho '4. POST-SETUP starting...'
 
 # 4.1. Favorite sidebar apps
-dconf write /org/gnome/shell/favorite-apps "['google-chrome.desktop', 'code.desktop', 'gitkraken.desktop', 'insomnia.desktop', 'pgadmin4.desktop', 'org.gnome.Terminal.desktop', 'gnome-system-monitor.desktop', 'psensor.desktop', 'org.gnome.Nautilus.desktop']"
+dconf write /org/gnome/shell/favorite-apps "['google-chrome.desktop', 'code.desktop', 'gitkraken.desktop', 'postman_postman.desktop', 'pgadmin4.desktop', 'org.gnome.Terminal.desktop', 'gnome-system-monitor.desktop', 'psensor.desktop', 'org.gnome.Nautilus.desktop']"
 
 # 4.2. VS Code exstensions
 code --install-extension adrianwilczynski.csharp-to-typescript
