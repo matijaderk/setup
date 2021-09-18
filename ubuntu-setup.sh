@@ -118,42 +118,38 @@ chapterEcho '4. POST-SETUP starting...'
 dconf write /org/gnome/shell/favorite-apps "['google-chrome.desktop', 'code.desktop', 'gitkraken.desktop', 'insomnia.desktop', 'pgadmin4.desktop', 'org.gnome.Terminal.desktop', 'gnome-system-monitor.desktop', 'psensor.desktop', 'org.gnome.Nautilus.desktop']"
 
 # 4.2. VS Code exstensions
-# a) C#
 code --install-extension adrianwilczynski.csharp-to-typescript
 code --install-extension adrianwilczynski.namespace
-code --install-extension jchannon.csharpextensions
-code --install-extension jorgeserrano.vscode-csharp-snippets
-code --install-extension Leopotam.csharpfixformat
-code --install-extension ms-dotnettools.csharp
-code --install-extension VisualStudioExptTeam.vscodeintellicode
-
-# b) JS
-code --install-extension angryobject.react-pure-to-class-vscode
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension dsznajder.es7-react-js-snippets
-code --install-extension kisstkondoros.typelens
-code --install-extension octref.vetur
-code --install-extension ms-vscode.vscode-typescript-tslint-plugin
-
-# c) Git
-code --install-extension donjayamanne.githistory
-code --install-extension eamodio.gitlens
-code --install-extension mhutchie.git-graph
-code --install-extension waderyan.gitblame
-
-# d) Others
 code --install-extension alefragnani.Bookmarks
+code --install-extension alekangelov.alek-kai-theme
+code --install-extension angryobject.react-pure-to-class-vscode
 code --install-extension christian-kohler.path-intellisense
+code --install-extension ckolkman.vscode-postgres
 code --install-extension CoenraadS.bracket-pair-colorizer-2
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension donjayamanne.githistory
+code --install-extension dsznajder.es7-react-js-snippets
+code --install-extension eamodio.gitlens
+code --install-extension esbenp.prettier-vscode
 code --install-extension formulahendry.auto-close-tag
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension HookyQR.beautify
 code --install-extension ionutvmi.path-autocomplete
+code --install-extension jchannon.csharpextensions
+code --install-extension jorgeserrano.vscode-csharp-snippets
+code --install-extension kisstkondoros.typelens
+code --install-extension Leopotam.csharpfixformat
+code --install-extension mhutchie.git-graph
 code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-dotnettools.csharp
+code --install-extension ms-vscode.vscode-typescript-tslint-plugin
 code --install-extension naumovs.color-highlight
+code --install-extension octref.vetur
 code --install-extension shardulm94.trailing-spaces
 code --install-extension smukkekim.theme-setimonokai
-code --install-extension alekangelov.alek-kai-theme
+code --install-extension svipas.prettier-plus
+code --install-extension VisualStudioExptTeam.vscodeintellicode
+code --install-extension waderyan.gitblame
 code --install-extension wayou.vscode-todo-highlight
 
 # 4.3 Download VS Code settings file
