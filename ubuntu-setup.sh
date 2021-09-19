@@ -155,14 +155,18 @@ code --install-extension VisualStudioExptTeam.vscodeintellicode
 code --install-extension waderyan.gitblame
 code --install-extension wayou.vscode-todo-highlight
 
-# 4.3 Download VS Code settings file
+# 4.3 Install npm packages
+npm install -g @angular/cli
+npm install -g @vue/cli
+
+# 4.4 Download VS Code settings file
 wget -O "$HOME/.config/Code/User/settings.json" https://raw.githubusercontent.com/matijaderk/setup/master/vscode-settings
 
-# 4.4 Set default wallpaper
+# 4.5 Set default wallpaper
 wget -O /home/mat/Pictures/Wallpapers/wallpaper.jpg "https://raw.githubusercontent.com/matijaderk/setup/master/Wallpaper.jpg"
 gsettings set org.gnome.desktop.background picture-uri file:////home/mat/Pictures/Wallpapers//wallpaper.jpg
 
-# 4.5 Clean up files
+# 4.6 Clean up files
 rm *.deb
 rm *.gpg
 
