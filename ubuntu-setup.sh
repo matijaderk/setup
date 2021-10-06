@@ -105,10 +105,10 @@ sudo curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key
 # Create the repository configuration file:
 sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
 # Install pgAdmin
-sudo apt install pgadmin4
+sudo apt-get -y install pgadmin4
 
 # 3.6 psensor
-sudo apt install psensor
+sudo apt-get -y install psensor
 
 chapterEcho '3. APT PACKAGES complete...'
 
@@ -129,6 +129,7 @@ code --install-extension angryobject.react-pure-to-class-vscode
 code --install-extension christian-kohler.path-intellisense
 code --install-extension ckolkman.vscode-postgres
 code --install-extension CoenraadS.bracket-pair-colorizer-2
+code --install-extension cweijan.vscode-postgresql-client2
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension donjayamanne.githistory
 code --install-extension dsznajder.es7-react-js-snippets
@@ -145,7 +146,6 @@ code --install-extension Leopotam.csharpfixformat
 code --install-extension mhutchie.git-graph
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-dotnettools.csharp
-code --install-extension ms-vscode.vscode-typescript-tslint-plugin
 code --install-extension naumovs.color-highlight
 code --install-extension octref.vetur
 code --install-extension shardulm94.trailing-spaces
