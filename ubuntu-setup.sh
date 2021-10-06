@@ -163,8 +163,8 @@ npm install -g @vue/cli
 wget -O "$HOME/.config/Code/User/settings.json" https://raw.githubusercontent.com/matijaderk/setup/master/vscode-settings
 
 # 4.5 Set default wallpaper
-wget -O /home/mat/Pictures/Wallpapers/wallpaper.jpg "https://raw.githubusercontent.com/matijaderk/setup/master/Wallpaper.jpg"
-gsettings set org.gnome.desktop.background picture-uri file:////home/mat/Pictures/Wallpapers//wallpaper.jpg
+wget -O /home/mat/Pictures/wallpaper.jpg "https://raw.githubusercontent.com/matijaderk/setup/master/Wallpaper.jpg"
+gsettings set org.gnome.desktop.background picture-uri file:////home/mat/Pictures/wallpaper.jpg
 
 # 4.6 Clean up files
 rm *.deb
