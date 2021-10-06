@@ -170,4 +170,7 @@ gsettings set org.gnome.desktop.background picture-uri file:////home/mat/Picture
 rm *.deb
 rm *.gpg
 
+sudo apt-get update
+sudo apt-get -y upgrade
+
 chapterEcho '4. POST-SETUP complete...'
