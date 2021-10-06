@@ -67,7 +67,7 @@ sudo dpkg -i *dropbox_*.deb
 
 # 2.9. Insomnia
 wget https://updates.insomnia.rest/downloads/ubuntu/latest
-sudo dpkg -i Insomnia.Core-*.deb
+sudo dpkg -i latest
 
 # 2.10. Postman
 sudo snap install postman
