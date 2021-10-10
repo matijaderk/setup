@@ -166,6 +166,9 @@ wget -O "$HOME/.config/Code/User/settings.json" https://raw.githubusercontent.co
 wget -O /home/mat/Pictures/wallpaper.jpg "https://raw.githubusercontent.com/matijaderk/setup/master/Wallpaper.jpg"
 gsettings set org.gnome.desktop.background picture-uri file:////home/mat/Pictures/wallpaper.jpg
 
+# 4.6 Set default CPU colors
+gsettings set org.gnome.gnome-system-monitor cpu-colors "[(uint32 0, 'rgb(114,159,207)'), (1, 'rgb(114,159,207)'), (2, 'rgb(114,159,207)'), (3, 'rgb(114,159,207)'), (4, 'rgb(114,159,207)'), (5, 'rgb(114,159,207)'), (6, 'rgb(114,159,207)'), (7, 'rgb(114,159,207)'), (8, 'rgb(114,159,207)'), (9, 'rgb(114,159,207)'), (10, 'rgb(114,159,207)'), (11, 'rgb(114,159,207)'), (12, 'rgb(114,159,207)'), (13, 'rgb(114,159,207)'), (14, 'rgb(114,159,207)'), (15, 'rgb(114,159,207)'), (16, 'rgb(114,159,207)')]"
+
 # 4.6 Clean up files
 rm *.deb
 rm *.gpg
