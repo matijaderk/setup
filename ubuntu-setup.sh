@@ -80,7 +80,8 @@ chapterEcho '2. DEB FILES complete...'
 chapterEcho '3. APT PACKAGES starting...'
 
 # 3.1. Node
-sudo apt-get install nodejs -y
+curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+sudo apt-get install -y nodejs
 
 # 3.2. wget
 sudo apt-get install wget -y
