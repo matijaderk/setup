@@ -80,7 +80,7 @@ chapterEcho '2. DEB FILES complete...'
 chapterEcho '3. APT PACKAGES starting...'
 
 # 3.1. Node
-curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
 # 3.2. wget
