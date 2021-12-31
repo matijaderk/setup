@@ -77,105 +77,105 @@ chapterEcho '2. DEB FILES complete...'
 
 ####################
 ### APT PACKAGES ###
-# ####################
-# chapterEcho '3. APT PACKAGES starting...'
+####################
+chapterEcho '3. APT PACKAGES starting...'
 
-# # 3.1. Node
-# curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
-# sudo apt-get install -y nodejs
+# 3.1. Node
+sudo apt-get remove nodejs
+sudo apt-get remove npm
+sudo rm -rf /usr/local/bin/npm 
+sudo rm -rf /usr/local/share/man/man1/node* 
+sudo rm -rf /usr/local/lib/dtrace/node.d
+rm -rf ~/.npm
+rm -rf ~/.node-gyp
+sudo rm -rf /opt/local/bin/node
+sudo rm -rf /opt/local/include/node
+sudo rm -rf /opt/local/lib/node_modules
+sudo rm -rf /usr/local/lib/node*
+sudo rm -rf /usr/local/include/node*
+sudo rm -rf /usr/local/bin/node*
 
-# # 3.2. wget
-# sudo apt-get install wget -y
+sudo apt autoremove -y
 
-# # 3.3. git
-# sudo apt-get install git -y
+curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+sudo apt-get install -y nodejs
 
-# # 3.4. PostgreSQL
-# # Create the file repository configuration:
-# sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
-# # Import the repository signing key:
-# wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-# # Update the package lists:
-# sudo apt-get update
-# # Install the latest version of PostgreSQL.
-# # If you want a specific version, use 'postgresql-12' or similar instead of 'postgresql':
-# sudo apt-get -y install postgresql
+# 3.2. PostgreSQL
+# Create the file repository configuration:
+# Create the file repository configuration:
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+# Import the repository signing key:
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+# Update the package lists:
+sudo apt-get update
+# Install the latest version of PostgreSQL.
+# If you want a specific version, use 'postgresql-12' or similar instead of 'postgresql':
+sudo apt-get -y install postgresql
 
-# # 3.5 pgAdmin4
-# # Install the public key for the repository (if not done previously):
-# sudo curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
-# # Create the repository configuration file:
-# sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
-# # Install pgAdmin
-# sudo apt-get -y install pgadmin4
+# 3.3 pgAdmin4
+# Install the public key for the repository (if not done previously):
+sudo curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
+# Create the repository configuration file:
+sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
+# Install pgAdmin
+sudo apt-get -y install pgadmin4
 
-# # 3.6 psensor
-# sudo apt-get -y install psensor
+# 3.4 psensor
+sudo apt-get -y install psensor
 
-# chapterEcho '3. APT PACKAGES complete...'
+chapterEcho '3. APT PACKAGES complete...'
 
-# ##################
-# ### POST-SETUP ###
-# ##################
-# chapterEcho '4. POST-SETUP starting...'
+##################
+### POST-SETUP ###
+##################
+chapterEcho '4. POST-SETUP starting...'
 
-# # 4.1. Favorite sidebar apps
-# dconf write /org/gnome/shell/favorite-apps "['google-chrome.desktop', 'code.desktop', 'gitkraken.desktop', 'postman_postman.desktop', 'pgadmin4.desktop', 'org.gnome.Terminal.desktop', 'gnome-system-monitor.desktop', 'psensor.desktop', 'org.gnome.Nautilus.desktop']"
+# 4.1. VS Code exstensions
+code --install-extension adrianwilczynski.csharp-to-typescript
+code --install-extension adrianwilczynski.namespace
+code --install-extension alefragnani.Bookmarks
+code --install-extension alekangelov.alek-kai-theme
+code --install-extension angryobject.react-pure-to-class-vscode
+code --install-extension christian-kohler.path-intellisense
+code --install-extension ckolkman.vscode-postgres
+code --install-extension CoenraadS.bracket-pair-colorizer-2
+code --install-extension cweijan.vscode-postgresql-client2
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension donjayamanne.githistory
+code --install-extension dsznajder.es7-react-js-snippets
+code --install-extension eamodio.gitlens
+code --install-extension esbenp.prettier-vscode
+code --install-extension formulahendry.auto-close-tag
+code --install-extension formulahendry.auto-rename-tag
+code --install-extension HookyQR.beautify
+code --install-extension ionutvmi.path-autocomplete
+code --install-extension jchannon.csharpextensions
+code --install-extension jorgeserrano.vscode-csharp-snippets
+code --install-extension kisstkondoros.typelens
+code --install-extension Leopotam.csharpfixformat
+code --install-extension mhutchie.git-graph
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-dotnettools.csharp
+code --install-extension naumovs.color-highlight
+code --install-extension octref.vetur
+code --install-extension shardulm94.trailing-spaces
+code --install-extension smukkekim.theme-setimonokai
+code --install-extension svipas.prettier-plus
+code --install-extension VisualStudioExptTeam.vscodeintellicode
+code --install-extension waderyan.gitblame
+code --install-extension wayou.vscode-todo-highlight
 
-# # 4.2. VS Code exstensions
-# code --install-extension adrianwilczynski.csharp-to-typescript
-# code --install-extension adrianwilczynski.namespace
-# code --install-extension alefragnani.Bookmarks
-# code --install-extension alekangelov.alek-kai-theme
-# code --install-extension angryobject.react-pure-to-class-vscode
-# code --install-extension christian-kohler.path-intellisense
-# code --install-extension ckolkman.vscode-postgres
-# code --install-extension CoenraadS.bracket-pair-colorizer-2
-# code --install-extension cweijan.vscode-postgresql-client2
-# code --install-extension dbaeumer.vscode-eslint
-# code --install-extension donjayamanne.githistory
-# code --install-extension dsznajder.es7-react-js-snippets
-# code --install-extension eamodio.gitlens
-# code --install-extension esbenp.prettier-vscode
-# code --install-extension formulahendry.auto-close-tag
-# code --install-extension formulahendry.auto-rename-tag
-# code --install-extension HookyQR.beautify
-# code --install-extension ionutvmi.path-autocomplete
-# code --install-extension jchannon.csharpextensions
-# code --install-extension jorgeserrano.vscode-csharp-snippets
-# code --install-extension kisstkondoros.typelens
-# code --install-extension Leopotam.csharpfixformat
-# code --install-extension mhutchie.git-graph
-# code --install-extension ms-azuretools.vscode-docker
-# code --install-extension ms-dotnettools.csharp
-# code --install-extension naumovs.color-highlight
-# code --install-extension octref.vetur
-# code --install-extension shardulm94.trailing-spaces
-# code --install-extension smukkekim.theme-setimonokai
-# code --install-extension svipas.prettier-plus
-# code --install-extension VisualStudioExptTeam.vscodeintellicode
-# code --install-extension waderyan.gitblame
-# code --install-extension wayou.vscode-todo-highlight
+# 4.2 Download VS Code settings file
+wget -O "$HOME/.config/Code/User/settings.json" https://raw.githubusercontent.com/matijaderk/setup/master/vscode-settings
 
-# # 4.3 Install npm packages
-# npm install -g @angular/cli
-# npm install -g @vue/cli
+# 4.3 Set default CPU colors
+gsettings set org.gnome.gnome-system-monitor cpu-colors "[(uint32 0, 'rgb(114,159,207)'), (1, 'rgb(114,159,207)'), (2, 'rgb(114,159,207)'), (3, 'rgb(114,159,207)'), (4, 'rgb(114,159,207)'), (5, 'rgb(114,159,207)'), (6, 'rgb(114,159,207)'), (7, 'rgb(114,159,207)'), (8, 'rgb(114,159,207)'), (9, 'rgb(114,159,207)'), (10, 'rgb(114,159,207)'), (11, 'rgb(114,159,207)'), (12, 'rgb(114,159,207)'), (13, 'rgb(114,159,207)'), (14, 'rgb(114,159,207)'), (15, 'rgb(114,159,207)'), (16, 'rgb(114,159,207)')]"
 
-# # 4.4 Download VS Code settings file
-# wget -O "$HOME/.config/Code/User/settings.json" https://raw.githubusercontent.com/matijaderk/setup/master/vscode-settings
+# 4.4 Clean up files
+rm *.deb
+rm *.gpg
 
-# # 4.5 Set default wallpaper
-# wget -O /home/mat/Pictures/wallpaper.jpg "https://raw.githubusercontent.com/matijaderk/setup/master/Wallpaper.jpg"
-# gsettings set org.gnome.desktop.background picture-uri file:////home/mat/Pictures/wallpaper.jpg
+sudo apt-get update
+sudo apt-get -y upgrade
 
-# # 4.6 Set default CPU colors
-# gsettings set org.gnome.gnome-system-monitor cpu-colors "[(uint32 0, 'rgb(114,159,207)'), (1, 'rgb(114,159,207)'), (2, 'rgb(114,159,207)'), (3, 'rgb(114,159,207)'), (4, 'rgb(114,159,207)'), (5, 'rgb(114,159,207)'), (6, 'rgb(114,159,207)'), (7, 'rgb(114,159,207)'), (8, 'rgb(114,159,207)'), (9, 'rgb(114,159,207)'), (10, 'rgb(114,159,207)'), (11, 'rgb(114,159,207)'), (12, 'rgb(114,159,207)'), (13, 'rgb(114,159,207)'), (14, 'rgb(114,159,207)'), (15, 'rgb(114,159,207)'), (16, 'rgb(114,159,207)')]"
-
-# # 4.6 Clean up files
-# rm *.deb
-# rm *.gpg
-
-# sudo apt-get update
-# sudo apt-get -y upgrade
-
-# chapterEcho '4. POST-SETUP complete...'
+chapterEcho '4. POST-SETUP complete...'
