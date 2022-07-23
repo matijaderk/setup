@@ -38,38 +38,25 @@ sudo apt-get install apt-transport-https -y
 sudo apt-get update
 sudo apt-get install code -y
 
-# 2.3. Dotnet Core
-wget https://packages.microsoft.com/config/ubuntu/21.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-rm packages-microsoft-prod.deb
-
-sudo apt-get update; \
-  sudo apt-get install -y apt-transport-https && \
-  sudo apt-get update && \
-  sudo apt-get install -y dotnet-sdk-6.0
-
-# 2.4. Chrome
+# 2.3. Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
-# 2.5. Yarn
+# 2.4. Yarn
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 sudo apt-get update
 sudo apt-get install yarn -y
 
-# 2.6 Slack
+# 2.5 Slack
 wget https://downloads.slack-edge.com/linux_releases/slack-desktop-4.16.0-amd64.deb
 sudo apt-get install ./slack-desktop-*.deb
 
-# 2.7 Dropbox
+# 2.6 Dropbox
 wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2020.03.04_amd64.deb
 sudo dpkg -i *dropbox_*.deb
 
-# 2.8. Postman
-sudo snap install postman
-
-# 2.9. Update
+# 2.7. Update
 sudo apt-get update
 sudo apt-get upgrade -y
 
@@ -97,31 +84,13 @@ sudo rm -rf /usr/local/bin/node*
 
 sudo apt autoremove -y
 
-curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
-# 3.2. PostgreSQL
-# Create the file repository configuration:
-# Create the file repository configuration:
-sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
-# Import the repository signing key:
-wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-# Update the package lists:
-sudo apt-get update
-# Install the latest version of PostgreSQL.
-# If you want a specific version, use 'postgresql-12' or similar instead of 'postgresql':
-sudo apt-get -y install postgresql
-
-# 3.3 pgAdmin4
-# Install the public key for the repository (if not done previously):
-sudo curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
-# Create the repository configuration file:
-sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
-# Install pgAdmin
-sudo apt-get -y install pgadmin4
-
-# 3.4 psensor
+# 3.4 psensor, thunderbird, cheese
 sudo apt-get -y install psensor
+sudo apt-get -y install thunderbird
+sudo apt-get -y install cheese
 
 chapterEcho '3. APT PACKAGES complete...'
 
@@ -131,33 +100,20 @@ chapterEcho '3. APT PACKAGES complete...'
 chapterEcho '4. POST-SETUP starting...'
 
 # 4.1. VS Code exstensions
-code --install-extension adrianwilczynski.csharp-to-typescript
-code --install-extension adrianwilczynski.namespace
 code --install-extension alefragnani.Bookmarks
 code --install-extension alekangelov.alek-kai-theme
-code --install-extension angryobject.react-pure-to-class-vscode
 code --install-extension christian-kohler.path-intellisense
-code --install-extension ckolkman.vscode-postgres
-code --install-extension CoenraadS.bracket-pair-colorizer-2
-code --install-extension cweijan.vscode-postgresql-client2
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension donjayamanne.githistory
-code --install-extension dsznajder.es7-react-js-snippets
 code --install-extension eamodio.gitlens
 code --install-extension esbenp.prettier-vscode
 code --install-extension formulahendry.auto-close-tag
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension HookyQR.beautify
 code --install-extension ionutvmi.path-autocomplete
-code --install-extension jchannon.csharpextensions
-code --install-extension jorgeserrano.vscode-csharp-snippets
 code --install-extension kisstkondoros.typelens
-code --install-extension Leopotam.csharpfixformat
 code --install-extension mhutchie.git-graph
-code --install-extension ms-azuretools.vscode-docker
-code --install-extension ms-dotnettools.csharp
 code --install-extension naumovs.color-highlight
-code --install-extension octref.vetur
 code --install-extension shardulm94.trailing-spaces
 code --install-extension smukkekim.theme-setimonokai
 code --install-extension svipas.prettier-plus
