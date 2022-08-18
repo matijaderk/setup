@@ -11,7 +11,7 @@
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
   },
   {
-    "key": "cmd+n cmd+n",
+    "key": "cmd+f cmd+r",
     "command": "references-view.findReferences",
     "when": "editorHasReferenceProvider"
   },
@@ -23,10 +23,6 @@
   {
     "key": "cmd+k cmd+p",
     "command": "workbench.action.navigateBack"
-  },
-  {
-    "key": "ctrl+-",
-    "command": "-workbench.action.navigateBack"
   },
   {
     "key": "cmd+k cmd+u",
@@ -41,10 +37,6 @@
   {
     "key": "cmd+k cmd+n",
     "command": "workbench.action.navigateForward"
-  },
-  {
-    "key": "ctrl+shift+-",
-    "command": "-workbench.action.navigateForward"
   },
   {
     "key": "shift+alt+f",
