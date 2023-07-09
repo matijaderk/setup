@@ -1,0 +1,50 @@
+// MacBook
+[
+  {
+    "key": "ctrl+r ctrl+r",
+    "command": "editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "f2",
+    "command": "-editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+f ctrl+r",
+    "command": "references-view.findReferences",
+    "when": "editorHasReferenceProvider"
+  },
+  {
+    "key": "shift+alt+f12",
+    "command": "-references-view.findReferences",
+    "when": "editorHasReferenceProvider"
+  },
+  {
+    "key": "ctrl+k ctrl+p",
+    "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "ctrl+k ctrl+u",
+    "command": "git.unstageSelectedRanges",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "ctrl+k ctrl+n",
+    "command": "-git.unstageSelectedRanges",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "ctrl+k ctrl+n",
+    "command": "workbench.action.navigateForward"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    "key": "ctrl+d ctrl+d",
+    "command": "editor.action.sortLinesAscending"
+  }
+]
