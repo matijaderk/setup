@@ -70,8 +70,8 @@ chapterEcho '3. APT PACKAGES starting...'
 # 3.1. Node
 sudo apt-get remove nodejs
 sudo apt-get remove npm
-sudo rm -rf /usr/local/bin/npm 
-sudo rm -rf /usr/local/share/man/man1/node* 
+sudo rm -rf /usr/local/bin/npm
+sudo rm -rf /usr/local/share/man/man1/node*
 sudo rm -rf /usr/local/lib/dtrace/node.d
 rm -rf ~/.npm
 rm -rf ~/.node-gyp
@@ -100,26 +100,36 @@ chapterEcho '3. APT PACKAGES complete...'
 chapterEcho '4. POST-SETUP starting...'
 
 # 4.1. VS Code exstensions
+
+# 4.1.1 - General
 code --install-extension alefragnani.Bookmarks
-code --install-extension alekangelov.alek-kai-theme
 code --install-extension christian-kohler.path-intellisense
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension donjayamanne.githistory
-code --install-extension eamodio.gitlens
-code --install-extension esbenp.prettier-vscode
 code --install-extension formulahendry.auto-close-tag
 code --install-extension formulahendry.auto-rename-tag
-code --install-extension HookyQR.beautify
 code --install-extension ionutvmi.path-autocomplete
-code --install-extension kisstkondoros.typelens
-code --install-extension mhutchie.git-graph
 code --install-extension naumovs.color-highlight
 code --install-extension shardulm94.trailing-spaces
-code --install-extension smukkekim.theme-setimonokai
-code --install-extension svipas.prettier-plus
-code --install-extension VisualStudioExptTeam.vscodeintellicode
-code --install-extension waderyan.gitblame
 code --install-extension wayou.vscode-todo-highlight
+# 4.1.2 - Themes
+code --install-extension alekangelov.alek-kai-theme
+code --install-extension smukkekim.theme-setimonokai
+# 4.1.2 - Git
+code --install-extension donjayamanne.githistory
+code --install-extension eamodio.gitlens
+code --install-extension mhutchie.git-graph
+code --install-extension waderyan.gitblame
+# 4.1.3 - JS
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension esbenp.prettier-vscode
+code --install-extension HookyQR.beautify
+code --install-extension kisstkondoros.typelens
+code --install-extension VisualStudioExptTeam.vscodeintellicode
+code --install-extension VisualStudioExptTeam.vscodeintellicode-completions
+# 4.1.4 - C#
+code --install-extension ms-dotnettools.csdevkit
+# 4.1.5 - SQL
+code --install-extension ms-mssql.mssql
+code --install-extension cweijan.vscode-postgresql-client2
 
 # 4.2 Download VS Code settings file
 wget -O "$HOME/.config/Code/User/settings.json" https://raw.githubusercontent.com/matijaderk/setup/master/vscode-settings
