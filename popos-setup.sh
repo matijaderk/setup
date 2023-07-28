@@ -70,8 +70,8 @@ chapterEcho '3. APT PACKAGES starting...'
 # 3.1. Node
 sudo apt-get remove nodejs
 sudo apt-get remove npm
-sudo rm -rf /usr/local/bin/npm 
-sudo rm -rf /usr/local/share/man/man1/node* 
+sudo rm -rf /usr/local/bin/npm
+sudo rm -rf /usr/local/share/man/man1/node*
 sudo rm -rf /usr/local/lib/dtrace/node.d
 rm -rf ~/.npm
 rm -rf ~/.node-gyp

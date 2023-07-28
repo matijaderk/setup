@@ -1,4 +1,3 @@
-// MacBook
 [
   {
     "key": "ctrl+r ctrl+r",
@@ -11,7 +10,7 @@
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+f ctrl+r",
+    "key": "ctrl+k ctrl+r",
     "command": "references-view.findReferences",
     "when": "editorHasReferenceProvider"
   },
