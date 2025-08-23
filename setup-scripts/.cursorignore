@@ -1,0 +1,71 @@
+# Add directories or file patterns to ignore during indexing (e.g. foo/ or *.csv)
+
+# Git files and folders
+.git/
+
+.gitignore
+.gitattributes
+.gitmodules
+.gitkeep
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.staging
+.env.*.local
+*.env
+
+# Environment folders
+env/
+/environment/
+/config/env/
+
+# Secrets and credentials
+secrets/
+credentials/
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cert
+id_rsa
+id_ed25519
+*.pub
+
+# Logs and temporary files
+*.log
+logs/
+tmp/
+temp/
+.tmp/
+
+# Dependencies and build artifacts
+node_modules/
+dist/
+build/
+.next/
+.nuxt/
+.vuepress/dist/
+.serverless/
+.fusebox/
+.dynamodb/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
